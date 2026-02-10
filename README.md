@@ -1,5 +1,5 @@
-# OMG3D-projectpage
-Project page of OMG3D
+# Stroke3D-projectpage
+Project page of Stroke3D
 
 # Academic Project Page Template
 This is an academic paper project page template.

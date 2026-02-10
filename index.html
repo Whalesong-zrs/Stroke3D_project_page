@@ -6,7 +6,8 @@
         content="Deformable Neural Radiance Fields creates free-viewpoint portraits (nerfies) from casually captured videos.">
   <meta name="keywords" content="Nerfies, D-NeRF, NeRF"> -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>OMG3D: 3D object manipulation in a single image usint generative models</title>
+  <title>Stroke3D: Lifting 2D strokes into rigged 3D model via latent diffusion models</title>
+  <link rel="icon" type="image/png" href="static/images/icon.png">
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -85,20 +86,25 @@
 
 <section class="hero">
   <div class="hero-body">
-    <div class="container is-max-desktop">
+    <div class="container" style="max-width: 1200px;">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">OMG3D: 3D object manipulation in a single image usint generative models</h1>
+          <div style="position: relative; display: inline-block;">
+            <img src="./static/images/icon.png" alt="Stroke3D Icon" style="width: 180px; position: absolute; left: -180px; top: 50%; transform: translateY(-50%);">
+            <h1 class="title is-1 publication-title">Stroke3D: Lifting 2D strokes into rigged <br> 3D model via latent diffusion models</h1>
+          </div>
+          <div class="is-size-4" style="margin-bottom: 10px;">
+            <b>ICLR 2026</b>
+          </div>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <!-- <a href="https://keunhong.com">Keunhong Park</a><sup>1</sup>,</span>
-               -->
-               Ruisi Zhao<sup>1</sup>,</span>
+              <a href="https://openreview.net/profile?id=%7ERuisi_Zhao1" target="_blank">Ruisi Zhao</a><sup>1</sup>,</span>
             <span class="author-block">
-              <a href="https://river-zhang.github.io/zechuanzhang//" target="_blank">Zechuan Zhang</a><sup>1</sup>,</span>
+              <a href="https://openreview.net/profile?id=~Haoren_Zheng3" target="_blank">Haoren_Zheng</a><sup>1</sup>,</span>
             <span class="author-block">
-              <a href="https://z-x-yang.github.io/" target="_blank">Zongxin Yang</a><sup>1</sup>,</span>
-            </span>
+              <a href="https://z-x-yang.github.io/" target="_blank">Zongxin Yang</a><sup>2</sup>,</span>
+            <span class="author-block">
+              <a href="https://hehefan.github.io/" target="_blank">Hehe Fan</a><sup>1</sup>,</span>
             <span class="author-block">
               <a href="https://scholar.google.com/citations?user=RMSuNFwAAAAJ&hl=zh-CN&oi=ao" target="_blank">Yi Yang</a><sup>1</sup>
             </span>
@@ -108,58 +114,38 @@
             <!-- <span class="author-block"><sup>1</sup>University of Washington,</span>
             <span class="author-block"><sup>2</sup>Google Research</span> -->
             <span class="author-block"><sup>1</sup>ReLER, CCAI, Zhejiang University
+              <span class="author-block"><sup>2</sup>DBMI, HMS, Harvard University
           </div>
 
           <div class="column has-text-centered">
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <!-- <a href="https://arxiv.org/pdf/2011.12948"
-                   class="external-link button is-normal is-rounded is-dark"> -->
+                <a href="https://openreview.net/pdf?id=VgOWxor3LV" class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
                   </span>
                   <span>Paper</span>
                 </a>
               </span>
-              <span class="link-block">
-                <!-- <a href="https://arxiv.org/abs/2011.12948"
-                   class="external-link button is-normal is-rounded is-dark"> -->
-                  <span class="icon">
-                      <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
-              <!-- Video Link. -->
-              <span class="link-block">
-                <!-- <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
-                   class="external-link button is-normal is-rounded is-dark"> -->
-                  <span class="icon">
-                      <i class="fab fa-youtube"></i>
-                  </span>
-                  <span>Video</span>
-                </a>
-              </span>
               <!-- Code Link. -->
               <span class="link-block">
-                <!-- <a href="https://github.com/google/nerfies"
-                   class="external-link button is-normal is-rounded is-dark"> -->
+                <a href="https://github.com/Whalesong-zrs/Stroke3D" class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
                   </span>
                   <span>Code</span>
-                  </a>
+                </a>
               </span>
               <!-- Dataset Link. -->
               <span class="link-block">
-                <!-- <a href="https://github.com/google/nerfies/releases/tag/0.1"
-                   class="external-link button is-normal is-rounded is-dark"> -->
+                <a class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="far fa-images"></i>
                   </span>
                   <span>Data</span>
-                  </a>
+                </a>
+              </span>
             </div>
 
           </div>
@@ -169,107 +155,17 @@
   </div>
 </section>
 
-
-
-
-<!-- <section class="section">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-
-        <div class="item item-michelle">
-          <video poster="" id="box-walk" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/video_application/michelle.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-
-        <div class="item item-michelle">
-          <video poster="" id="box-walk" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/video_application/pete.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-
-        <div class="item item-box-walk">
-          <video poster="" id="box-walk" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/video_application/box_walk.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-plane">
-          <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/video_application/plane.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-box-greet">
-          <video poster="" id="box-greet" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/video_application/box_greet.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        
-        <div class="item item-pumpkin">
-          <video poster="" id="pumpkin" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/video_application/pumpkin.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-elephant">
-          <video poster="" id="elephant" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/video_application/elephant.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-      </div>
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body" style="padding-bottom: 0;">
+      <img src="./static/images/application.png" alt="Stroke3D Application" width="100%">
     </div>
-    
-  </div>
-  <h2 class="title is-4 is-centered has-text-centered" style="margin-bottom:0;">
-    Applications of OMG3D. 
-  </h2>
-</section> -->
-<section class="section">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-
-        <div class="item item-michelle">
-          <img src="./static/videos/gif_application/michelle.gif" alt="Michelle Application" height="100%">
-        </div>
-
-        <div class="item item-michelle">
-          <img src="./static/videos/gif_application/pete.gif" alt="Pete Application" height="100%">
-        </div>
-
-        <div class="item item-box-walk">
-          <img src="./static/videos/gif_application/box_walk.gif" alt="Box Walk Application" height="100%">
-        </div>
-
-        <div class="item item-plane">
-          <img src="./static/videos/gif_application/plane.gif" alt="Plane Application" height="100%">
-        </div>
-
-        <div class="item item-box-greet">
-          <img src="./static/videos/gif_application/box_greet.gif" alt="Box Greet Application" height="100%">
-        </div>
-        
-        <div class="item item-pumpkin">
-          <img src="./static/videos/gif_application/pumpkin.gif" alt="Pumpkin Application" height="100%">
-        </div>
-
-        <div class="item item-elephant">
-          <img src="./static/videos/gif_application/elephant.gif" alt="Elephant Application" height="100%">
-        </div>
-
-      </div>
+    <div class="hero-body" style="padding-top: 0;">
+      <h2 class="subtitle has-text-justified" style="margin-bottom: 0;">
+        We present <b><i>Stroke3D</i></b>, a novel framework that generates rigged 3D meshes from user-drawn strokes and language instructions. We show versatile downstream applications, including generation from different viewpoints, structural editing by adding strokes or modifying joint positions, and final animation. Skeleton color represents the depth in 3D space.
+      </h2>
     </div>
   </div>
-  
-  <h2 class="title is-4 is-centered has-text-centered" style="margin-bottom:0;">
-    Applications of OMG3D. 
-  </h2>
 </section>
 
 
@@ -281,22 +177,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Object manipulation in images aims to not only edit the object presentation but 
-            also gift objects with motion. Previous methods encountered challenges in concurrently 
-            handling static editing and dynamic motion applications, while also struggling to 
-            achieve realism in object appearance and scene lighting. In this work, we introduce OMG3D, 
-            a novel framework that integrates the precise geometric control with the generative power 
-            of diffusion models, thus achieving significant enhancements in visual performance. 
-            Our framework converts 2D objects into 3D, enabling user-directed modifications and 
-            lifelike motions at the geometric level. To address texture realism, we propose CustomRefiner, 
-            a texture refinement module that pretrain a customized diffusion model to align the 
-            style and perspectives of coarse renderings with the original image. Additionally, 
-            we introduce IllumiCombiner, an lighting processing module that estimates and adjusts 
-            background lighting to match human visual perception, resulting in more realistic 
-            illumination. Extensive experiments demonstrate the outstanding visual performance of
-            our approach in both static and dynamic scenarios. Remarkably, all these steps
-            can be done using one NVIDIA 3090. The code and project page will be released
-            upon acceptance of the paper.
+            Rigged 3D assets are fundamental to 3D deformation and animation. However, existing 3D generation methods face challenges in generating animatable geometry, while rigging techniques lack fine-grained structural control over skeleton creation. To address these limitations, we introduce <b><i>Stroke3D</i></b>, a novel framework that directly generates rigged meshes from user inputs: 2D drawn strokes and a descriptive text prompt. Our approach pioneers a two-stage pipeline that separates the generation into: 1) <b>Controllable Skeleton Generation,</b> we employ the Skeletal Graph VAE (<i>Sk-VAE</i>) to encode the skeleton's graph structure into a latent space, where the Skeletal Graph DiT (<i>Sk-DiT</i>) generates a skeletal embedding. The generation process is conditioned on both the text for semantics and the 2D strokes for explicit structural control, with the VAE's decoder reconstructing the final high-quality 3D skeleton; and 2) <b>Enhanced Mesh Synthesis via TextuRig and SKA-DPO,</b> where we then synthesize a textured mesh conditioned on the generated skeleton. For this stage, we first enhance an existing skeleton-to-mesh model by augmenting its training data with <i>TextuRig</i>—a dataset of textured and rigged meshes with captions, curated from Objaverse-XL. Additionally, we employ a preference optimization strategy, <i>SKA-DPO</i>, guided by a skeleton-mesh alignment score, to further improve geometric fidelity. Together, our framework enables a more intuitive workflow for creating ready-to-animate 3D content. To the best of our knowledge, our work is the first to generate rigged 3D meshes conditioned on user-drawn 2D strokes. Extensive experiments demonstrate that Stroke3D produces plausible skeletons and high-quality meshes.
           </p>
         </div>
       </div>
@@ -305,238 +186,97 @@
 </section>
 
 <section class="hero teaser" style="margin-top: 50px;">
-  <div class="container is-max-desktop" style="max-width: 1200px;"> <!-- Add custom max-width here -->
-    <div class="hero-body">
-      <!-- Your image here -->
-      <img src="./static/images/pipeline.jpg" alt="teaser" width="100%" style="margin-left: 30px;"> 
-      
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+        <h2 class="title is-3" style="margin-bottom:0;">
+          Method for Stroke3D
+        </h2>
+      </div>
     </div>
-    <h2 class="title is-4 is-centered has-text-centered" style="margin-bottom:0;">
-      Model structure of our model, OMG3D. 
-    </h2>
+    <div class="hero-body">
+      <img src="./static/images/method.png" alt="teaser" width="100%">
+    </div>
+    <div style="padding: 0 1.5rem; margin-top: -20px;">
+      <h2 class="subtitle has-text-justified" style="margin-bottom:0;">
+        Overview of <b><i>Stroke3D</i></b>. During the training phase, <i>Sk-VAE</i> encodes a skeleton graph into a latent space. Subsequently, <i>Sk-DiT</i> is trained to generate these latent embeddings, conditioned on the corresponding 2D strokes and text prompt. After training with <i>TextuRig</i>, we leverage <i>SKA-DPO</i> to further refine SKDream with a skeleton-mesh alignment reward signal. The right side illustrates the implementation details of our models.
+      </h2>
+    </div>
   </div>
 </section>
 
 <hr>
 <section class="hero teaser" style="margin-top: 50px;">
-  <div class="container is-max-desktop" style="max-width: 1600px;"> <!-- Add custom max-width here -->
-    <div class="hero-body">
-      <!-- Your image here -->
-      <img src="./static/images/edit_compare.jpg" alt="teaser" width="100%" style="margin-left: 30px;"> 
-      
-    </div>
-    <h2 class="title is-4 is-centered has-text-centered" style="margin-bottom:0;">
-      Comparison with other image edit methods.
-    </h2>
-  </div>
-</section>
-<hr>
-<section class="section">
   <div class="container is-max-desktop">
-    
-
-    <div class="container is-max-desktop">
-      <table style="width: 98%;margin-left:auto;margin-right:auto; text-align: center; border-spacing: 4px; border-collapse: separate; ">
-        <tbody>
-          <tr>
-            <td colspan="2" style="text-align: center; padding: 10px;">
-              <h2 class="subtitle has-text-centered">
-                Text Description: A rotated pumpkin jumping on a stump.
-              </h2>
-            </td>
-          </tr>
-
-          <tr>
-            <th>
-              <video src="./static/videos/video_comparison/pumpkin_dc.mp4" width="250" height="250" controls autoplay loop muted></video>
-              <div style="font-weight: bold;">
-                By DynamiCrafter
-              </div>
-            </th>
-            <th>
-              <video src="./static/videos/video_comparison/pumpkin_is.mp4" width="250" height="250" controls autoplay loop muted></video>
-              <div style="font-weight: bold;">
-                By Image Sculpting
-              </div>
-            </th>
-            <th>
-              <video src="./static/videos/video_comparison/pumpkin_ours.mp4" width="250" height="250" controls autoplay loop muted></video>
-              <div style="font-weight: bold;">
-                Ours
-              </div>
-            </th>
-          </tr>
-     
-          <tr>
-            <th>
-              <video src="./static/videos/video_comparison/pumpkin_pika.mp4" width="250" height="250" controls autoplay loop muted></video>
-              <div style="font-weight: bold;">
-                By Pika Video Model
-              </div>
-            </th>
-            <th>
-              <video src="./static/videos/video_comparison/pumpkin_svd.mp4" width="250" height="250" controls autoplay loop muted></video>
-              <div style="font-weight: bold;">
-                By SVD
-              </div>
-            </th>
-            
-            <th>
-              <video src="./static/videos/video_comparison/pumpkin_kling.mp4" width="250" height="250" controls autoplay loop muted></video>
-              <div style="font-weight: bold;">
-                By Kling Video Model
-              </div>
-            </th>
-          </tr>
-
-          <!-- 插入空行 -->
-          <tr>
-            <td colspan="2" style="height: 20px;"></td>
-          </tr>
-
-          <tr>
-            <td colspan="2">
-              <h2 class="subtitle has-text-centered">
-                Text Description: An elephant is walking on the ground.
-              </h2>
-            </td>
-          </tr>
-
-          <tr>
-            <th>
-              <video src="./static/videos/video_comparison/elephant_dc.mp4" width="250" height="250" controls autoplay loop muted></video>
-              <div style="font-weight: bold;">
-                By DynamiCrafter
-              </div>
-            </th>
-            <th>
-              <video src="./static/videos/video_comparison/elephant_is.mp4" width="250" height="250" controls autoplay loop muted></video>
-              <div style="font-weight: bold;">
-                By Image Sculpting
-              </div>
-            </th>
-            <th>
-              <video src="./static/videos/video_comparison/elephant_ours.mp4" width="250" height="250" controls autoplay loop muted></video>
-              <div style="font-weight: bold;">
-                Ours
-              </div>
-            </th>
-          </tr>
-     
-          <tr>
-            <th>
-              <video src="./static/videos/video_comparison/elephant_pika.mp4" width="250" height="250" controls autoplay loop muted></video>
-              <div style="font-weight: bold;">
-                By Pika Video Model
-              </div>
-            </th>
-            <th>
-              <video src="./static/videos/video_comparison/elephant_svd.mp4" width="250" height="250" controls autoplay loop muted></video>
-              <div style="font-weight: bold;">
-                By SVD
-              </div>
-            </th>
-            
-            <th>
-              <video src="./static/videos/video_comparison/elephant_kling.mp4" width="250" height="250" controls autoplay loop muted></video>
-              <div style="font-weight: bold;">
-                By Kling Video Model
-              </div>
-            </th>
-          </tr>
-          
-          <!-- 插入空行 -->
-          <tr>
-            <td colspan="2" style="height: 20px;"></td>
-          </tr>
-          
-          <tr>
-            <td colspan="2">
-              <h2 class="subtitle has-text-centered">
-                Text Description: A boxtoy greeting on the keyboard.
-              </h2>
-            </td>
-          </tr>
-          
-          <tr>
-            <th>
-              <video src="./static/videos/video_comparison/boxtoy_dc.mp4" width="250" height="250" controls autoplay loop muted></video>
-              <div style="font-weight: bold;">
-                By DynamiCrafter
-              </div>
-            </th>
-            <th>
-              <video src="./static/videos/video_comparison/boxtoy_is.mp4" width="250" height="250" controls autoplay loop muted></video>
-              <div style="font-weight: bold;">
-                By Image Sculpting
-              </div>
-            </th>
-            <th>
-              <video src="./static/videos/video_comparison/boxtoy_our.mp4" width="250" height="250" controls autoplay loop muted></video>
-              <div style="font-weight: bold;">
-                Ours
-              </div>
-            </th>
-          </tr>
-     
-          <tr>
-            <th>
-              <video src="./static/videos/video_comparison/boxtoy_pika.mp4" width="250" height="250" controls autoplay loop muted></video>
-              <div style="font-weight: bold;">
-                By Pika Video Model
-              </div>
-            </th>
-            <th>
-              <video src="./static/videos/video_comparison/boxtoy_svd.mp4" width="250" height="250" controls autoplay loop muted></video>
-              <div style="font-weight: bold;">
-                By SVD
-              </div>
-            </th>
-            
-            <th>
-              <video src="./static/videos/video_comparison/boxtoy_kling.mp4" width="250" height="250" controls autoplay loop muted></video>
-              <div style="font-weight: bold;">
-                By Kling Video Model
-              </div>
-            </th>
-          </tr>
-          
-
-        </tbody>
-      </table>      
-    </div>
-    
-  </div>
-  
-</section>
-<h2 class="title is-4 is-centered has-text-centered" style="margin-bottom:0;">
-  Comparison with other image animation methods.
-</h2>
-<hr>
-
-
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Demo</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Local video here -->
-            <video width="100%" controls>
-              <source src="./static/videos/teaser.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
-          </div>
-        </div>
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+        <h2 class="title is-3" style="margin-bottom:0;">
+          Skeleton Generation
+        </h2>
       </div>
     </div>
+    <div style="padding: 0 1.5rem;">
+      <h2 class="subtitle has-text-justified" style="margin-bottom:0;">
+        We compare our skeleton generation results with <a href="https://zhan-xu.github.io/rig-net/">RigNet</a>, <a href="https://skdream3d.github.io/">SKDream</a>, <a href="https://chaoyuesong.github.io/MagicArticulate/">MagicArticulate</a>, and <a href="https://zjp-shadow.github.io/works/UniRig/">UniRig</a>.
+      </h2>
+    </div>
+    <div class="hero-body">
+      <img src="./static/images/skeleton.png" alt="Skeleton Generation" width="100%">
+    </div>
   </div>
 </section>
+<section class="hero teaser" style="margin-top: 10px;">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+        <h2 class="title is-3" style="margin-bottom:0;">
+          Mesh Generation
+        </h2>
+      </div>
+    </div>
+    <div style="padding: 0 1.5rem;">
+      <h2 class="subtitle has-text-justified" style="margin-bottom:0;">
+        We compare our mesh generation results with <a href="https://skdream3d.github.io/">SKDream</a>, and present ablation studies on <b><i>SKA-DPO</i></b> and <b><i>TextuRig</i></b>.
+      </h2>
+    </div>
+    <div class="hero-body">
+      <img src="./static/images/mesh.png" alt="Mesh Generation" width="100%">
+    </div>
+  </div>
+</section>
+<hr>
 
-
+<section class="hero teaser" style="margin-top: 50px;">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+        <h2 class="title is-3" style="margin-bottom:0;">
+          TextuRig Dataset
+        </h2>
+      </div>
+    </div>
+    <div style="padding: 0 1.5rem;">
+      <h2 class="subtitle has-text-justified" style="margin-bottom:0;">
+        Analysis of the <b><i>TextuRig</i></b> dataset used in mesh generation.
+      </h2>
+    </div>
+    <div class="hero-body">
+      <img src="./static/images/dataset.png" alt="TextuRig Dataset" width="100%">
+    </div>
+  </div>
+</section>
+<hr>
+  <div class="container is-max-desktop content">
+    <h2 class="title is-3">BibTeX</h2>
+    <pre><code>@inproceedings{
+anonymous2026stroked,
+title={Stroke3D: Lifting 2D strokes into rigged 3D model via latent diffusion models},
+author={Anonymous},
+booktitle={The Fourteenth International Conference on Learning Representations},
+year={2026},
+url={https://openreview.net/forum?id=VgOWxor3LV}
+}</code></pre>
+  </div>
 </section>
 <!--End BibTex citation -->
 
